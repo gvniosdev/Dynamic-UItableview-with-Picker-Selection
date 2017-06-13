@@ -12,6 +12,8 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"DETAILS";
+    _dict = [[NSMutableDictionary alloc]init];
+    _arr = [[NSMutableArray alloc]init];
     
     arrProductTitle = [[NSMutableArray alloc]initWithObjects:@"title0",@"title1",@"title2",@"title3",@"title4",@"title5",@"title6",@"title7",@"title8",@"title9",@"title10",@"title11",@"title12",@"title13",@"title14",@"title15", nil];
     
@@ -36,11 +38,25 @@
     }
     
     cell1.productTitleLabel.text =[arrProductTitle objectAtIndex:indexPath.row];
+    NSLog(@"%@",_dict);
+    NSLog(@"%@",[NSString stringWithFormat:@"%ld",(long)indexPath.row]);
     
-    self.downPicker = [[DownPicker alloc] initWithTextField:cell1.productvalueTextfield withData:arrProductVal];
+    NSString *oKey = [_dict.allKeys firstObject];
+    NSLog(@"%@",oKey);
+    if (_dict[[NSString stringWithFormat:@"%ld",(long)indexPath.row]]) {
+        //cell1.productvalueTextfield.text = @"";
+        // aDic has a entry named "foo"
+        cell1.productvalueTextfield.text =[_dict valueForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
+    } else {
+        // "foo" doesn't exsits
+        cell1.productvalueTextfield.text = @"";
+        self.downPicker = [[DownPicker alloc] initWithTextField:cell1.productvalueTextfield withData:arrProductVal];
+        self.downPicker.tag = indexPath.row;
+        
+        [self.downPicker addTarget:self action:@selector(measurementSelected:) forControlEvents:UIControlEventValueChanged];
+        [cell1.contentView addSubview:self.downPicker];
+    }
     
-    [self.downPicker addTarget:self action:@selector(measurementSelected:) forControlEvents:UIControlEventValueChanged];
-    [cell1.contentView addSubview:self.downPicker];
     
     return cell1;
 }
@@ -49,7 +65,15 @@
 
 
 -(void)measurementSelected:(id)dp {
+    
     NSString* selectedValue = [dp text];
+    NSString* selectedIndex = [NSString stringWithFormat:@"%ld",(long)[dp tag]];
+    [_dict setValue:[dp text] forKey:selectedIndex];
+    NSLog(@"_dict: %@",_dict);
+    
+    [_arr addObject:_dict];
+    NSLog(@"_arr: %@",_arr);
+    
     //    selectedIndex
     NSLog(@"SELECTED TAG:::::::%ld",[dp tag]);
     NSLog(@"SELECTED VALUE:::::::%@",selectedValue);
