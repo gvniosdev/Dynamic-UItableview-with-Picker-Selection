@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		546EC2DC1EEFF1430062D0F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2DB1EEFF1430062D0F3 /* main.m */; };
+		546EC2DF1EEFF1430062D0F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2DE1EEFF1430062D0F3 /* AppDelegate.m */; };
+		546EC2E21EEFF1430062D0F3 /* ProductTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2E11EEFF1430062D0F3 /* ProductTableVC.m */; };
+		546EC2E51EEFF1430062D0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2E31EEFF1430062D0F3 /* Main.storyboard */; };
+		546EC2E71EEFF1430062D0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2E61EEFF1430062D0F3 /* Assets.xcassets */; };
+		546EC2EA1EEFF1430062D0F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2E81EEFF1430062D0F3 /* LaunchScreen.storyboard */; };
+		546EC2F31EEFFB5A0062D0F3 /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2F21EEFFB5A0062D0F3 /* customCell.m */; };
+		546EC2FC1EEFFE5B0062D0F3 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2F51EEFFE5B0062D0F3 /* downArrow.png */; };
+		546EC2FD1EEFFE5B0062D0F3 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2F61EEFFE5B0062D0F3 /* downArrow@2x.png */; };
+		546EC2FE1EEFFE5B0062D0F3 /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2F71EEFFE5B0062D0F3 /* DownPicker.m */; };
+		546EC2FF1EEFFE5B0062D0F3 /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2F91EEFFE5B0062D0F3 /* UIDownPicker.m */; };
+		546EC3001EEFFE5B0062D0F3 /* downArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2FA1EEFFE5B0062D0F3 /* downArrow@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		546EC2D71EEFF1430062D0F3 /* pickerViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickerViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		546EC2DB1EEFF1430062D0F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		546EC2DD1EEFF1430062D0F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		546EC2DE1EEFF1430062D0F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		546EC2E01EEFF1430062D0F3 /* ProductTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableVC.h; sourceTree = "<group>"; };
+		546EC2E11EEFF1430062D0F3 /* ProductTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTableVC.m; sourceTree = "<group>"; };
+		546EC2E41EEFF1430062D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		546EC2E61EEFF1430062D0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		546EC2E91EEFF1430062D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		546EC2EB1EEFF1430062D0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546EC2F11EEFFB5A0062D0F3 /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
+		546EC2F21EEFFB5A0062D0F3 /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
+		546EC2F51EEFFE5B0062D0F3 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		546EC2F61EEFFE5B0062D0F3 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
+		546EC2F71EEFFE5B0062D0F3 /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPicker.m; sourceTree = "<group>"; };
+		546EC2F81EEFFE5B0062D0F3 /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownPicker.h; sourceTree = "<group>"; };
+		546EC2F91EEFFE5B0062D0F3 /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownPicker.m; sourceTree = "<group>"; };
+		546EC2FA1EEFFE5B0062D0F3 /* downArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@3x.png"; sourceTree = "<group>"; };
+		546EC2FB1EEFFE5B0062D0F3 /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		546EC2D41EEFF1420062D0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		546EC2CE1EEFF1400062D0F3 = {
+			isa = PBXGroup;
+			children = (
+				546EC2D91EEFF1430062D0F3 /* pickerViewSample */,
+				546EC2D81EEFF1430062D0F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		546EC2D81EEFF1430062D0F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				546EC2D71EEFF1430062D0F3 /* pickerViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		546EC2D91EEFF1430062D0F3 /* pickerViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				546EC2DD1EEFF1430062D0F3 /* AppDelegate.h */,
+				546EC2DE1EEFF1430062D0F3 /* AppDelegate.m */,
+				546EC2E01EEFF1430062D0F3 /* ProductTableVC.h */,
+				546EC2E11EEFF1430062D0F3 /* ProductTableVC.m */,
+				546EC2F11EEFFB5A0062D0F3 /* customCell.h */,
+				546EC2F21EEFFB5A0062D0F3 /* customCell.m */,
+				546EC2E31EEFF1430062D0F3 /* Main.storyboard */,
+				546EC2E61EEFF1430062D0F3 /* Assets.xcassets */,
+				546EC2E81EEFF1430062D0F3 /* LaunchScreen.storyboard */,
+				546EC2EB1EEFF1430062D0F3 /* Info.plist */,
+				546EC2DA1EEFF1430062D0F3 /* Supporting Files */,
+			);
+			path = pickerViewSample;
+			sourceTree = "<group>";
+		};
+		546EC2DA1EEFF1430062D0F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				546EC2F41EEFFE4A0062D0F3 /* DownPicker */,
+				546EC2DB1EEFF1430062D0F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		546EC2F41EEFFE4A0062D0F3 /* DownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				546EC2F51EEFFE5B0062D0F3 /* downArrow.png */,
+				546EC2F61EEFFE5B0062D0F3 /* downArrow@2x.png */,
+				546EC2F71EEFFE5B0062D0F3 /* DownPicker.m */,
+				546EC2F81EEFFE5B0062D0F3 /* UIDownPicker.h */,
+				546EC2F91EEFFE5B0062D0F3 /* UIDownPicker.m */,
+				546EC2FA1EEFFE5B0062D0F3 /* downArrow@3x.png */,
+				546EC2FB1EEFFE5B0062D0F3 /* DownPicker.h */,
+			);
+			name = DownPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		546EC2D61EEFF1420062D0F3 /* pickerViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546EC2EE1EEFF1430062D0F3 /* Build configuration list for PBXNativeTarget "pickerViewSample" */;
+			buildPhases = (
+				546EC2D31EEFF1420062D0F3 /* Sources */,
+				546EC2D41EEFF1420062D0F3 /* Frameworks */,
+				546EC2D51EEFF1420062D0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pickerViewSample;
+			productName = pickerViewSample;
+			productReference = 546EC2D71EEFF1430062D0F3 /* pickerViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		546EC2CF1EEFF1400062D0F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Prateek;
+				TargetAttributes = {
+					546EC2D61EEFF1420062D0F3 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 546EC2D21EEFF1410062D0F3 /* Build configuration list for PBXProject "pickerViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 546EC2CE1EEFF1400062D0F3;
+			productRefGroup = 546EC2D81EEFF1430062D0F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				546EC2D61EEFF1420062D0F3 /* pickerViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		546EC2D51EEFF1420062D0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546EC2EA1EEFF1430062D0F3 /* LaunchScreen.storyboard in Resources */,
+				546EC2E71EEFF1430062D0F3 /* Assets.xcassets in Resources */,
+				546EC2FD1EEFFE5B0062D0F3 /* downArrow@2x.png in Resources */,
+				546EC2E51EEFF1430062D0F3 /* Main.storyboard in Resources */,
+				546EC2FC1EEFFE5B0062D0F3 /* downArrow.png in Resources */,
+				546EC3001EEFFE5B0062D0F3 /* downArrow@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		546EC2D31EEFF1420062D0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546EC2E21EEFF1430062D0F3 /* ProductTableVC.m in Sources */,
+				546EC2DF1EEFF1430062D0F3 /* AppDelegate.m in Sources */,
+				546EC2F31EEFFB5A0062D0F3 /* customCell.m in Sources */,
+				546EC2FF1EEFFE5B0062D0F3 /* UIDownPicker.m in Sources */,
+				546EC2DC1EEFF1430062D0F3 /* main.m in Sources */,
+				546EC2FE1EEFFE5B0062D0F3 /* DownPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		546EC2E31EEFF1430062D0F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546EC2E41EEFF1430062D0F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		546EC2E81EEFF1430062D0F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546EC2E91EEFF1430062D0F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		546EC2EC1EEFF1430062D0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		546EC2ED1EEFF1430062D0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546EC2EF1EEFF1430062D0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pickerViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.pickerViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		546EC2F01EEFF1430062D0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pickerViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.pickerViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		546EC2D21EEFF1410062D0F3 /* Build configuration list for PBXProject "pickerViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546EC2EC1EEFF1430062D0F3 /* Debug */,
+				546EC2ED1EEFF1430062D0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		546EC2EE1EEFF1430062D0F3 /* Build configuration list for PBXNativeTarget "pickerViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546EC2EF1EEFF1430062D0F3 /* Debug */,
+				546EC2F01EEFF1430062D0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 546EC2CF1EEFF1400062D0F3 /* Project object */;
+}
